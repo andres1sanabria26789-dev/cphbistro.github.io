@@ -1,0 +1,42 @@
+/* Style Guide - Tipografía y Paleta de Colores */
+
+body {
+  /* ... resto de tu código ... */
+  font-family: 'Roboto Slab', serif; /* Para todo el texto general */
+}
+
+header, .navbar__brand-title, .hero h1 {
+  font-family: 'Bungee', sans-serif; /* Para los títulos y el logo */
+}
+/* Variables de Color (Se mantienen igual) */
+:root {
+  --lemon-chiffon: #fbf2c0ff;
+  --taupe: #48392aff;
+  --dark-coffee: #43281cff;
+  --white: #ffffffff;
+  --black: #000000ff;
+}
+
+/* Paleta de Colores - CSS Variables */
+:root {
+  /* CSS HEX */
+  --lemon-chiffon: #fbf2c0ff;
+  --taupe: #48392aff;
+  --dark-coffee: #43281cff;
+  --white: #ffffffff;
+  --black: #000000ff;
+
+  /* CSS HSL */
+  --lemon-chiffon-hsl: hsla(51, 88%, 87%, 1);
+  --taupe-hsl: hsla(30, 26%, 22%, 1);
+  --dark-coffee-hsl: hsla(18, 41%, 19%, 1);
+  --white-hsl: hsla(0, 0%, 100%, 1);
+  --black-hsl: hsla(0, 0%, 0%, 1);
+
+  /* CSS RGB */
+  --lemon-chiffon-rgb: rgba(251, 242, 192, 1);
+  --taupe-rgb: rgba(72, 57, 42, 1);
+  --dark-coffee-rgb: rgba(67, 40, 28, 1);
+  --white-rgb: rgba(255, 255, 255, 1);
+  --black-rgb: rgba(0, 0, 0, 1);
+}

@@ -1,0 +1,1187 @@
+<!DOCTYPE html>
+<html lang="es" translate="no">
+<head>
+  <title>CPH Bistró | Restaurante y Hostal | Café-Bar | Club de lectura</title>
+  <meta name="description" content="CPH Bistró: Restaurante, hostal, café-bar y club de lectura. Sabores y cultura en un ambiente único. ¡Haz tu reserva y vive una experiencia inolvidable!">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="shortcut icon" href="favicon.ico">
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  
+  <link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="android-chrome-512x512.png">
+
+  <link rel="stylesheet" href="style-guide.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+
+  <meta property="og:url" content="https://andres1sanabria26789-dev.github.io/cphbistro.github.io/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="CPH Bistró | Restaurante y Hostal | Café-Bar | Club de lectura">
+  <meta property="og:description" content="CPH Bistró: Restaurante, hostal, café-bar y club de lectura. Sabores y cultura en un ambiente único. ¡Haz tu reserva y vive una experiencia inolvidable!">
+  <meta property="og:image" content="https://i.ibb.co/LXVtdZBd/OGImage.png">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta property="twitter:domain" content="andres1sanabria26789-dev.github.io">
+  <meta property="twitter:url" content="https://andres1sanabria26789-dev.github.io/cphbistro.github.io/">
+  <meta name="twitter:title" content="CPH Bistró | Restaurante y Hostal | Café-Bar | Club de lectura">
+  <meta name="twitter:description" content="CPH Bistró: Restaurante, hostal, café-bar y club de lectura. Sabores y cultura en un ambiente único. ¡Haz tu reserva y vive una experiencia inolvidable!">
+  <meta name="twitter:image" content="https://i.ibb.co/LXVtdZBd/OGImage.png">
+  <style>
+  <style>  
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; }
+    body {
+      min-height: 100%;
+      background: var(--white, #ffffff);
+      color: var(--dark-coffee, #43281c);
+      font-family: 'Roboto Slab', serif;
+      line-height: 1.6;
+    }
+    a { color: inherit; }
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 999;
+      background: var(--black, #000000);
+      color: var(--white, #ffffff);
+      font-family: 'Bungee', 'Roboto Slab', serif;
+      padding: 1.2rem 0;
+    }
+    .navbar {
+      width: min(1180px, 100%);
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 1rem;
+      padding: 1rem 1rem;
+      border-bottom: 1px solid rgba(255,255,255,0.12);
+    }
+    .navbar__brand {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      margin-right: auto;
+    }
+    .navbar__toggle {
+      display: inline-flex;
+      order: 3;
+      border: none;
+      background: transparent;
+      padding: 0;
+      cursor: pointer;
+      color: inherit;
+    }
+    .navbar__toggle img {
+      width: 1.9rem;
+      height: 1.9rem;
+      display: block;
+      filter: invert(1) brightness(2);
+    }
+    .navbar__logo {
+      width: 6rem;
+      min-width: 6rem;
+      height: 6rem;
+      display: grid;
+      place-items: center;
+      background: var(--dark-coffee, #43281c);
+      border-radius: 1.25rem;
+      padding: 1rem;
+    }
+    .navbar__logo img {
+      width: 100%;
+      display: block;
+    }
+    .navbar__title {
+      display: none;
+    }
+    .navbar__menu {
+      display: flex;
+      gap: 1.8rem;
+      flex-wrap: wrap;
+      align-items: center;
+      font-family: 'Roboto Slab', serif;
+    }
+    .navbar__menu a {
+      color: var(--white, #ffffff);
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 0.95rem;
+      transition: transform 0.2s ease, opacity 0.2s ease;
+    }
+    .navbar__menu a:hover,
+    .navbar__menu a:focus {
+      opacity: 0.85;
+      transform: scale(1.05);
+    }
+    .navbar__brand-title a {
+      color: inherit;
+      text-decoration: none;
+      display: inline-block;
+      transition: transform 0.2s ease, opacity 0.2s ease;
+    }
+    .navbar__brand-title a:hover,
+    .navbar__brand-title a:focus {
+      opacity: 0.85;
+      transform: scale(1.05);
+    }
+    .navbar__toggle {
+      display: inline-flex;
+    }
+    .navbar__brand-title {
+      margin: 0;
+      font-size: 1.4rem;
+      font-family: 'Bungee', 'Roboto Slab', serif;
+      color: var(--white, #ffffff);
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+    main {
+      width: min(1180px, 100%);
+      margin: 0 auto;
+      padding: 2rem 1rem 3rem;
+    }
+    .section {
+      margin-bottom: 4rem;
+    }
+    .hero {
+      display: grid;
+      gap: 1.75rem;
+      align-items: center;
+      margin-bottom: 2rem;
+    }
+    .hero__content {
+      padding: 2rem 1.5rem;
+      background: var(--lemon-chiffon);
+      border-radius: 1.5rem;
+      box-shadow: 0 24px 60px rgba(0,0,0,0.08);
+    }
+    .hero__logo {
+      width: 12rem;
+      max-width: 100%;
+      margin-bottom: 1rem;
+    }
+    .hero__logo img {
+      width: 100%;
+      display: block;
+    }
+    .hero h1 {
+      margin: 0;
+      font-size: clamp(2.8rem, 6vw, 4.5rem);
+      line-height: 0.95;
+      letter-spacing: 0.03em;
+      color: var(--dark-coffee, #43281c);
+    }
+    .hero p {
+      margin: 1.5rem 0 0;
+      max-width: 40rem;
+      color: var(--taupe, #48392a);
+      font-size: 1.05rem;
+    }
+    .about {
+      display: grid;
+      gap: 2rem;
+      grid-template-columns: minmax(0, 1.25fr) minmax(0, 0.85fr);
+      align-items: start;
+      margin-bottom: 2rem;
+    }
+    .about__intro h2 {
+      margin: 0;
+      font-size: 1.5rem;
+      line-height: 1.3;
+      color: var(--dark-coffee, #43281c);
+    }
+    .about__intro p {
+      margin: 1.25rem 0 0;
+      max-width: 42rem;
+      color: var(--taupe, #48392a);
+      font-size: 1rem;
+    }
+    .about__cards {
+      display: grid;
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+    .hostal-grid {
+      display: grid;
+      gap: 1.5rem;
+      grid-template-columns: 1fr 1.25fr;
+      align-items: start;
+    }
+    .hostal-photos {
+      display: grid;
+      gap: 1rem;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+    .hostal-photo {
+      position: relative;
+      min-height: 22rem;
+      border-radius: 1.5rem;
+      display: grid;
+      overflow: hidden;
+      cursor: pointer;
+      transition: transform 0.2s ease;
+    }
+    .hostal-photo:hover {
+      transform: scale(1.02);
+    }
+    .hostal-photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      border-radius: 1.5rem;
+    }
+    .hostal-photo:hover {
+      transform: scale(1.01);
+      transition: transform 0.2s ease;
+    }
+    .hostal-photo::after {
+      content: "Ver foto";
+      position: absolute;
+      bottom: 1rem;
+      left: 50%;
+      transform: translateX(-50%);
+      padding: 0.3rem 0.75rem;
+      background: rgba(0,0,0,0.5);
+      color: #fff;
+      border-radius: 999px;
+      font-size: 0.85rem;
+      opacity: 0;
+      transition: opacity 0.2s ease;
+    }
+    .hostal-photo:hover::after {
+      opacity: 1;
+    }
+    .hostal-details p {
+      margin: 0 0 1rem;
+      text-align: justify;
+      color: var(--taupe, #48392a);
+      line-height: 1.8;
+    }
+    .hostal-details ul {
+      margin: 0 0 1rem;
+      padding-left: 1.2rem;
+      color: var(--dark-coffee, #43281c);
+      line-height: 1.7;
+    }
+    .hostal-details ul li {
+      margin-bottom: 0.75rem;
+    }
+    .hostal-details ul li strong {
+      color: var(--dark-coffee, #43281c);
+    }
+    .hostal-details p strong {
+      color: var(--dark-coffee, #43281c);
+    }
+    .reserva-grid {
+      display: grid;
+      gap: 1rem;
+    }
+    .reserva-card {
+      background: var(--white, #fff);
+      border-radius: 1.5rem;
+      padding: 1.75rem;
+      box-shadow: 0 18px 30px rgba(0,0,0,0.06);
+    }
+    .reserva-form label {
+      display: block;
+      margin-bottom: 1rem;
+    }
+    .reserva-form small {
+      display: block;
+      margin-bottom: 0.5rem;
+      color: var(--dark-coffee, #43281c);
+      font-weight: 700;
+    }
+    .reserva-form input,
+    .reserva-form textarea {
+      width: 100%;
+      border: 1px solid rgba(72,57,42,0.15);
+      border-radius: 0.9rem;
+      padding: 0.95rem 1rem;
+      font: inherit;
+      color: var(--dark-coffee);
+      background: var(--white);
+    }
+    .reserva-form textarea {
+      min-height: 12rem;
+      resize: vertical;
+    }
+    .reserva-form button {
+      width: 100%;
+      margin-top: 1rem;
+      padding: 1rem;
+      border: none;
+      border-radius: 1rem;
+      background: var(--dark-coffee);
+      color: var(--white, #fff);
+      font-weight: 700;
+      cursor: pointer;
+    }
+    .about__card {
+      background: var(--white, #fff);
+      border-radius: 1.5rem;
+      padding: 1.75rem;
+      box-shadow: 0 18px 30px rgba(0,0,0,0.06);
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+    .about__card:hover {
+      transform: scale(1.02);
+      box-shadow: 0 22px 40px rgba(0,0,0,0.1);
+    }
+    .about__card h3 {
+      margin: 0 0 0.8rem;
+      color: var(--dark-coffee);
+      font-size: 1.05rem;
+    }
+    .about__card p {
+      margin: 0;
+      color: var(--taupe, #48392a);
+      line-height: 1.7;
+      text-align: justify;
+    }
+    .about__visuals {
+      display: grid;
+      gap: 1rem;
+      grid-template-columns: 1fr;
+    }
+    .about__visual {
+      background: #e7eaee;
+      border-radius: 1.5rem;
+      min-height: 12rem;
+      display: grid;
+      place-items: center;
+      overflow: hidden;
+    }
+    .about__visual--map {
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      min-height: 18rem;
+    }
+    .about__visual--large {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+      padding: 1rem;
+    }
+    .about__place-wrapper {
+      position: relative;
+      width: 100%;
+      border-radius: 1rem;
+      overflow: hidden;
+    }
+    .about__place-image {
+      width: 100%;
+      display: block;
+      object-fit: cover;
+      min-height: 12rem;
+    }
+    .about__place-icon {
+      position: absolute;
+      top: 1rem;
+      left: 1rem;
+      width: 2.2rem;
+      height: 2.2rem;
+      padding: 0.35rem;
+      background: rgba(255,255,255,0.85);
+      border-radius: 50%;
+      filter: none;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+    }
+    .about__visual iframe {
+      width: 100%;
+      flex: 1;
+      border: 0;
+      min-height: 10rem;
+    }
+    .about__location-info {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      padding: 0.85rem 1rem;
+      background: rgba(255,255,255,0.95);
+    }
+    .about__location-info img {
+      width: 1.2rem;
+      height: 1.2rem;
+      display: block;
+    }
+    .about__location-info span {
+      color: var(--dark-coffee, #43281c);
+      font-size: 0.95rem;
+      font-weight: 600;
+    }
+    .about__visual svg {
+      width: 2.2rem;
+      height: 2.2rem;
+      color: var(--dark-coffee, #43281c);
+      fill: currentColor;
+    }
+    .about__visual--large {
+      min-height: 16rem;
+    }
+    .hero-banner {
+      margin-bottom: 2rem;
+    }
+    .hero-banner img,
+    .hero__image img,
+    .about__place-image,
+    .product-image {
+      transition: transform 0.3s ease, filter 0.3s ease;
+    }
+    .hero-banner img,
+    .hero__image img {
+      width: 100%;
+      display: block;
+      border-radius: 1.5rem;
+      object-fit: cover;
+    }
+    .hero-banner img:hover,
+    .hero__image img:hover,
+    .about__place-image:hover,
+    .product-image:hover {
+      transform: scale(1.03);
+    }
+    .header-gradient {
+      height: 2rem;
+      background: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0));
+    }
+    .hero__image {
+      border-radius: 1.5rem;
+      overflow: hidden;
+      box-shadow: 0 24px 60px rgba(0,0,0,0.12);
+    }
+    .hero__image img {
+      width: 100%;
+      height: auto;
+      display: block;
+      object-fit: cover;
+    }
+    .cards-grid {
+      display: grid;
+      gap: 1rem;
+      grid-template-columns: repeat(3, minmax(18rem, 24rem));
+      justify-content: center;
+    }
+    .card {
+      background: var(--lemon-chiffon);
+      border-radius: 1.2rem;
+      overflow: hidden;
+      min-height: 18rem;
+      display: grid;
+      place-items: center;
+    }
+    .product-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+    .card--large {
+      grid-column: span 2;
+      min-height: 18rem;
+      background: var(--dark-coffee, #43281c);
+      color: var(--white, #fff);
+    }
+    .card--dark {
+      background: var(--taupe, #48392a);
+      color: var(--white, #fff);
+    }
+    .icon-circle {
+      width: 3.5rem;
+      height: 3.5rem;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.85);
+      display: grid;
+      place-items: center;
+    }
+    .icon-circle svg { width: 1.4rem; height: 1.4rem; fill: currentColor; }
+    .section-title {
+      margin: 0 0 1rem;
+      font-size: 1.5rem;
+      color: var(--dark-coffee, #43281c);
+    }
+    .menu-grid {
+      display: grid;
+      gap: 1rem;
+      grid-template-columns: 1fr;
+    }
+    .menu-card {
+      background: var(--white, #fff);
+      border-radius: 1.4rem;
+      padding: 1.75rem;
+      box-shadow: 0 16px 30px rgba(0,0,0,0.06);
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+    .menu-card:hover {
+      transform: scale(1.02);
+      box-shadow: 0 22px 40px rgba(0,0,0,0.1);
+    }
+    .menu-card h2 {
+      margin: 0 0 1rem;
+      font-size: 1.15rem;
+      color: var(--dark-coffee, #43281c);
+    }
+    .menu-card ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: grid;
+      gap: 0.75rem;
+    }
+    .menu-card li {
+      display: flex;
+      justify-content: space-between;
+      gap: 1rem;
+      color: var(--taupe, #48392a);
+      font-size: 0.98rem;
+    }
+    .menu-card li span:last-child { color: var(--dark-coffee); font-weight: 700; }
+    .menu-row {
+      display: grid;
+      gap: 1rem;
+      grid-template-columns: 1fr 1fr;
+    }
+    .cta-bar {
+      margin: 2rem 0;
+      padding: 1.8rem 2rem;
+      border-radius: 1.5rem;
+      background: var(--dark-coffee);
+      color: var(--white, #fff);
+      text-align: center;
+      font-weight: 600;
+    }
+    .reviews {
+      display: grid;
+      gap: 1rem;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+    .review-card {
+      background: var(--lemon-chiffon);
+      border-radius: 1.4rem;
+      padding: 1.75rem;
+      box-shadow: 0 16px 30px rgba(0,0,0,0.06);
+    }
+    .review-stars {
+      display: flex;
+      gap: 0.3rem;
+      margin-bottom: 1rem;
+    }
+    .review-stars span { color: var(--dark-coffee); font-size: 1rem; }
+    .review-card p { margin: 0 0 1.25rem; color: var(--taupe, #48392a); }
+    .review-author {
+      margin: 0;
+      color: var(--dark-coffee);
+      font-weight: 700;
+    }
+    .review-date { margin: 0.25rem 0 0; color: var(--taupe, #48392a); font-size: 0.9rem; }
+    .contact-grid {
+      display: grid;
+      gap: 1.5rem;
+      grid-template-columns: 1fr 1fr;
+    }
+    .contact-section {
+      background: var(--black);
+      padding: 2rem 1.5rem;
+      border-radius: 2rem;
+    }
+    .contact-section .section-title {
+      color: var(--white);
+      margin-bottom: 1.5rem;
+    }
+    .contact-card {
+      background: var(--white);
+      border-radius: 1.4rem;
+      padding: 1.75rem;
+      box-shadow: 0 16px 30px rgba(0,0,0,0.08);
+    }
+    .contact-card h3 {
+      margin-top: 0;
+      color: var(--dark-coffee);
+      font-size: 1.4rem;
+      letter-spacing: 0.02em;
+    }
+    .contact-item {
+      display: grid;
+      gap: 0.4rem;
+      margin-bottom: 1rem;
+    }
+    .contact-item strong { display: block; color: var(--dark-coffee); font-size: 1rem; }
+    .contact-item small { color: var(--taupe); font-size: 0.98rem; }
+    .contact-item span { display: block; color: var(--taupe); }
+    .contact-top {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      align-items: center;
+      margin-bottom: 1rem;
+    }
+    .contact-phone {
+      display: flex;
+      align-items: center;
+      gap: 0.85rem;
+      min-width: 18rem;
+      font-size: 1.15rem;
+      color: var(--dark-coffee);
+      font-weight: 700;
+    }
+    .contact-phone svg {
+      width: 1.6rem;
+      height: 1.6rem;
+      fill: var(--dark-coffee);
+      flex-shrink: 0;
+    }
+    .contact-phone span {
+      display: block;
+      font-size: 1rem;
+      color: var(--taupe);
+      font-weight: 600;
+    }
+    .contact-phone strong {
+      display: block;
+      font-size: 1.35rem;
+      margin-top: 0.15rem;
+      color: var(--dark-coffee);
+    }
+    .contact-details li {
+      display: flex;
+      gap: 0.75rem;
+      align-items: flex-start;
+      margin-bottom: 0.85rem;
+      font-size: 1rem;
+      color: var(--taupe);
+    }
+    .contact-details li svg { width: 1.2rem; height: 1.2rem; margin-top: 0.2rem; fill: var(--dark-coffee); }
+    .contact-socials {
+      display: flex;
+      gap: 0.75rem;
+      margin: 0;
+    }
+    .contact-socials a {
+      width: 2.4rem;
+      height: 2.4rem;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      background: rgba(67, 40, 28, 0.08);
+      transition: transform 0.2s ease, background 0.2s ease;
+    }
+    .contact-socials a:hover {
+      transform: translateY(-2px);
+      background: rgba(67, 40, 28, 0.16);
+    }
+    .contact-socials img {
+      width: 1.3rem;
+      height: 1.3rem;
+      display: block;
+    }
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      border: 1px solid rgba(72,57,42,0.15);
+      border-radius: 0.9rem;
+      padding: 0.95rem 1rem;
+      font: inherit;
+      color: var(--dark-coffee);
+      background: var(--white);
+    }
+    .contact-form textarea { min-height: 10rem; resize: vertical; }
+    .contact-form button {
+      width: 100%;
+      margin-top: 1rem;
+      padding: 1rem;
+      border: none;
+      border-radius: 1rem;
+      background: var(--dark-coffee);
+      color: var(--white, #fff);
+      font-weight: 700;
+      cursor: pointer;
+    }
+    .form-success {
+      margin-top: 1rem;
+      color: #247a33;
+      font-weight: 700;
+      display: none;
+    }
+    .form-success.visible {
+      display: block;
+    }
+    .lightbox-modal {
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.88);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      z-index: 10000;
+      padding: 1rem;
+    }
+    .lightbox-modal.active {
+      display: flex;
+    }
+    .lightbox-content {
+      position: relative;
+      max-width: 90vw;
+      max-height: 90vh;
+      width: 100%;
+      display: grid;
+      place-items: center;
+    }
+    .lightbox-image {
+      max-width: 100%;
+      max-height: 100%;
+      border-radius: 1rem;
+      box-shadow: 0 35px 80px rgba(0,0,0,0.45);
+    }
+    .lightbox-close,
+    .lightbox-prev,
+    .lightbox-next {
+      position: absolute;
+      border: none;
+      background: rgba(255,255,255,0.92);
+      color: #1f1f1f;
+      width: 3rem;
+      height: 3rem;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      cursor: pointer;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.22);
+    }
+    .lightbox-close {
+      top: 1rem;
+      right: 1rem;
+    }
+    .lightbox-prev {
+      left: 1rem;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    .lightbox-next {
+      right: 1rem;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    .lightbox-close:hover,
+    .lightbox-prev:hover,
+    .lightbox-next:hover {
+      background: #ffffff;
+    }
+    .lightbox-button {
+      font-size: 1.2rem;
+      line-height: 1;
+    }
+    .hostal-photo::after {
+      content: "Ver foto";
+      position: absolute;
+      bottom: 1rem;
+      left: 50%;
+      transform: translateX(-50%);
+      padding: 0.3rem 0.75rem;
+      background: rgba(0,0,0,0.5);
+      color: #fff;
+      border-radius: 999px;
+      font-size: 0.85rem;
+      opacity: 0;
+      transition: opacity 0.2s ease;
+    }
+    .hostal-photo:hover::after {
+      opacity: 1;
+    }
+    .footer {
+      margin-top: 2rem;
+      padding-top: 2rem;
+      text-align: center;
+      color: var(--taupe, #48392a);
+    }
+    .footer p a {
+      color: inherit;
+      text-decoration: none;
+      transition: transform 0.2s ease, opacity 0.2s ease;
+      display: inline-block;
+    }
+    .footer p a:hover,
+    .footer p a:focus {
+      transform: scale(1.05);
+      opacity: 0.85;
+    }
+    .footer small { display: block; margin-top: 0.75rem; }
+    @media (max-width: 1000px) {
+      .hero, .about, .menu-row, .reviews, .contact-grid, .hostal-grid { grid-template-columns: 1fr; }
+      .cards-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .card--large { grid-column: span 2; }
+      .navbar {
+        flex-wrap: wrap;
+      }
+      .navbar__toggle {
+        display: inline-flex;
+      }
+      .navbar__menu {
+        width: 100%;
+        display: none;
+        flex-direction: column;
+        gap: 0.75rem;
+        margin-top: 1rem;
+      }
+      .navbar__menu.active {
+        display: flex;
+      }
+      .navbar__menu a {
+        display: block;
+        width: 100%;
+        padding: 0.85rem 1rem;
+        border-radius: 1rem;
+        background: rgba(255,255,255,0.1);
+      }
+    }
+    @media (max-width: 640px) {
+      main { padding: 1rem; }
+      .cards-grid { grid-template-columns: 1fr; }
+      .card--large { grid-column: span 1; }
+      .hero__content { padding: 1.5rem; }
+      .navbar__menu a {
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body id="top">
+  <header>
+    <div class="navbar">
+      <div class="navbar__brand">
+        <h1 class="navbar__brand-title"><a href="#top">CPH Bistro</a></h1>
+      </div>
+      <button class="navbar__toggle" aria-label="Abrir menú">
+        <img src="Images/Icons/list.svg" alt="Menú" aria-hidden="true">
+      </button>
+      <nav class="navbar__menu">
+        <a href="#quienes-somos">¿Quienes Somos?</a>
+        <a href="#nuestros-productos">Nuestros Productos</a>
+        <a href="#hostal">Hostal</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </div>
+  </header>
+  <div class="header-gradient"></div>
+  <main>
+    <section class="hero-banner">
+      <img src="Images/Hero/HeroDesktop.jpg" alt="Paisaje CPH Bistró">
+    </section>
+    <section class="about section" id="quienes-somos">
+      <div class="about__intro">
+        <h2>¿Quiénes Somos?</h2>
+        <p>CPH Bistró nació de la pasión por crear experiencias memorables. Somos un espacio único que combina un restaurante de alta calidad con un hostal boutique, ofreciendo a nuestros visitantes una experiencia completa e inolvidable en un ambiente acogedor y elegante.</p>
+        <div class="about__cards">
+          <article class="about__card">
+            <h3>Nuestra Misión</h3>
+            <p>Proporcionar experiencias gastronómicas excepcionales y alojamiento de calidad, combinando sabores auténticos, ingredientes frescos y un servicio personalizado que supere las expectativas de cada uno de nuestros huéspedes.</p>
+          </article>
+          <article class="about__card">
+            <h3>Nuestra Visión</h3>
+            <p>Convertirnos en el destino preferido para quienes buscan una experiencia integral de gastronomía y hospedaje, siendo reconocidos por nuestra excelencia, innovación y el compromiso constante con la satisfacción de nuestros clientes.</p>
+          </article>
+        </div>
+      </div>
+      <div class="about__visuals">
+        <div class="about__visual about__visual--map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3977.392351979985!2d-75.315332915539!3d4.523128967799395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e38c19188f45e45%3A0x65ba921316c85c0!2sCura%20por%20el%20Habla!5e0!3m2!1ses!2sus!4v1774705553815!5m2!1ses!2sus" title="Ubicación CPH Bistro" loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <div class="about__location-info">
+            <img src="Images/Icons/map-pin.svg" alt="Ubicación" aria-hidden="true">
+            <span>VillaRestrepo, Ibagué, Tolima</span>
+          </div>
+        </div>
+        <div class="about__visual about__visual--large">
+          <div class="about__place-wrapper">
+          <video class="about__place-image" autoplay muted loop playsinline poster="Images/OGImage.jpg">
+           <source src="Videos/videohero.mp4" type="video/mp4">
+           Tu navegador no soporta la reproducción de video.
+          </video>
+           <img src="Images/Icons/house.svg" alt="Icono de casa" class="about__place-icon">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="nuestros-productos">
+      <h2 class="section-title">Nuestros Productos</h2>
+      <div class="cards-grid">
+        <article class="card"><img src="Images/Servicio1.jpg" alt="Servicio 1" class="product-image"></article>
+        <article class="card"><img src="Images/Servicio2.jpg" alt="Servicio 2" class="product-image"></article>
+        <article class="card"><img src="Images/Servicio3.jpg" alt="Servicio 3" class="product-image"></article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="menu-row">
+        <div class="menu-card">
+          <h2>Panadería</h2>
+          <ul>
+            <li><span>Baguette ajo, orégano</span><span>5k</span></li>
+            <li><span>Hojaldre de chocolate</span><span>4k</span></li>
+            <li><span>Hojaldre crema francesa</span><span>4.5k</span></li>
+            <li><span>Hojaldre Jamón y queso</span><span>4k</span></li>
+            <li><span>Galletas</span><span>3k</span></li>
+          </ul>
+        </div>
+        <div class="menu-card">
+          <h2>Platos Permanentes</h2>
+          <ul>
+            <li><span>Pasta napolitana</span><span>20k</span></li>
+            <li><span>Pasta al ragú</span><span>20k</span></li>
+            <li><span>PAN COOK</span><span>20k</span></li>
+            <li><span>Pizza artesanal</span><span>12k</span></li>
+            <li><span>Calzone</span><span>10k</span></li>
+          </ul>
+        </div>
+        <div class="menu-card">
+          <h2>Bebidas</h2>
+          <ul>
+            <li><span>Sodas Hatsu</span><span>5k</span></li>
+            <li><span>Soda cereza/limón</span><span>5k</span></li>
+            <li><span>Cervezas</span><span>3.5k</span></li>
+            <li><span>Gaseosa</span><span>2.5k</span></li>
+            <li><span>Vino - Copa</span><span>8k, 10k</span></li>
+          </ul>
+        </div>
+        <div class="menu-card">
+          <h2>Con Reserva</h2>
+          <ul>
+            <li><span>Pasta verde con vegetales</span><span>25k</span></li>
+            <li><span>Pasta carbonara</span><span>20k</span></li>
+            <li><span>Pasta a la cazadora</span><span>27k</span></li>
+            <li><span>Raviolis, queso o carne</span><span>25k</span></li>
+            <li><span>Lasaña artesanal</span><span>25k</span></li>
+            <li><span>Canelones</span><span>20k</span></li>
+            <li><span>Crepes variados</span><span>15k</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title">Reseñas de Nuestros Huéspedes</h2>
+      <!-- Elfsight Google Reviews | Untitled Google Reviews -->
+      <script src="https://elfsightcdn.com/platform.js" async></script>
+      <div class="elfsight-app-319acb46-690f-4ced-94ce-758cc197acb9" data-elfsight-app-lazy></div>
+    </section>
+
+    <section class="section hostal-section" id="hostal">
+      <h2 class="section-title">Hostal</h2>
+      <div class="hostal-grid">
+        <div class="hostal-photos">
+          <div class="hostal-photo" data-index="0"><img src="Images/Hostal/a.jpg" alt="Hostal habitación 1"></div>
+          <div class="hostal-photo" data-index="1"><img src="Images/Hostal/b.jpg" alt="Hostal habitación 2"></div>
+          <div class="hostal-photo" data-index="2"><img src="Images/Hostal/c.jpg" alt="Hostal baño compartido"></div>
+        </div>
+        <div class="hostal-details">
+          <p>CPH te ofrece el servicio de hostel. Puedes reservar con nosotros y hacer de tu experiencia en la campiña tolimense algo inolvidable. Contamos con hermosas habitaciones compartidas propias de un hostel, para que te apartes del mundo agitado, puedas leer, escribir, meditar, conocer la región y renovar todas tus energías.</p>
+          <p><strong>Recuerda, la reserva se realiza por cama, no por habitación.</strong></p>
+          <ul>
+            <li><strong>Habitación 1.</strong> dos camarotes (4 camas)</li>
+            <li><strong>Habitación 2.</strong> tres camarotes (6 camas)</li>
+            <li><strong>Habitación 3.</strong> cuatro camarotes (8 camas)</li>
+          </ul>
+          <p><strong>(50k noche/cama)</strong></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section reserva-section" id="reserva">
+      <h2 class="section-title">Reservas</h2>
+      <div class="reserva-grid">
+        <div class="reserva-card">
+          <form class="reserva-form" id="reservaForm">
+            <label>
+              <small>Nombre</small>
+              <input type="text" name="Nombre" required>
+            </label>
+            <label>
+              <small>Correo electrónico (obligatorio)</small>
+              <input type="email" name="Correo electrónico" required>
+            </label>
+            <label>
+              <small>Número de teléfono (obligatorio)</small>
+              <input type="tel" name="Número de teléfono" required>
+            </label>
+            <label>
+              <small>Número de pasaporte o cédula (obligatorio)</small>
+              <input type="text" name="Número de pasaporte o cédula" required>
+            </label>
+            <label>
+              <small>Escribe tu fecha de llegada y de salida. Inmediatamente te confirmaremos la disponibilidad a tu número celular o correo. La atención será personalizada.</small>
+              <textarea name="Fechas y mensaje" rows="6" required></textarea>
+            </label>
+            <button type="submit">Enviar Reserva</button>
+            <div class="form-success" id="reservaSuccess" aria-live="polite"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contacto">
+      <h2 class="section-title">Contáctanos</h2>
+      <div class="contact-grid">
+        <div class="contact-card">
+          <h3>Información de Contacto</h3>
+          <div class="contact-top">
+            <div class="contact-phone">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.11-.21 11.36 11.36 0 003.55.57 1 1 0 011 1v3.5a1 1 0 01-1 1A17 17 0 013 5a1 1 0 011-1h3.5a1 1 0 011 1 11.36 11.36 0 00.57 3.55 1 1 0 01-.21 1.11l-2.2 2.2z"/></svg>
+              <div>
+                <span>Teléfono</span>
+                <strong>+57 311 541 2006</strong>
+              </div>
+            </div>
+            <div class="contact-socials">
+              <a href="https://www.instagram.com/explore/locations/114094174052231/cura-por-el-habla-bb/" target="_blank" rel="noopener noreferrer" title="Instagram">
+                <img src="Images/Icons/instagram-logo.svg" alt="Instagram">
+              </a>
+              <a href="https://www.facebook.com/cph.cultura/" target="_blank" rel="noopener noreferrer" title="Facebook">
+                <img src="Images/Icons/facebook-logo.svg" alt="Facebook">
+              </a>
+              <a href="mailto:curaporelhabla@gmail.com" title="Enviar correo">
+                <img src="Images/Icons/envelope.svg" alt="Email">
+              </a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <strong>Horario de Atención</strong>
+            <small>Restaurante, Cafetería-Bar: Lunes - Domingo: 12:00 PM - 8:00 PM</small>
+            <small>Hostal: Reserva directamente con nosotros y encuentra mejor precio.</small>
+          </div>
+        </div>
+        <div class="contact-card contact-form">
+          <h3>Envíanos un Mensaje</h3>
+          <form id="contactForm">
+            <label>
+              <small>Nombre</small>
+              <input type="text" name="Nombre" placeholder="Tu nombre" required>
+            </label>
+            <label>
+              <small>Email</small>
+              <input type="email" name="Email" placeholder="tu@email.com" required>
+            </label>
+            <label>
+              <small>Mensaje</small>
+              <textarea name="Mensaje" placeholder="Tu mensaje" required></textarea>
+            </label>
+            <button type="submit">Enviar Mensaje</button>
+            <div class="form-success" id="contactSuccess" aria-live="polite"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p><a href="#top">CPH BISTRÓ · Cura Por el Habla</a></p>
+      <small>© 2026 CPH Bistró. Todos los derechos reservados.</small>
+    </footer>
+  </main>
+  <div class="lightbox-modal" id="hostalLightbox">
+    <button class="lightbox-close lightbox-button" aria-label="Cerrar">×</button>
+    <button class="lightbox-prev lightbox-button" aria-label="Anterior">‹</button>
+    <div class="lightbox-content">
+      <img src="" alt="Hostal foto" class="lightbox-image">
+    </div>
+    <button class="lightbox-next lightbox-button" aria-label="Siguiente">›</button>
+  </div>
+  <script>
+    const hostalPhotos = Array.from(document.querySelectorAll('.hostal-photo img'));
+    const lightbox = document.getElementById('hostalLightbox');
+    const lightboxImage = lightbox.querySelector('.lightbox-image');
+    const closeBtn = lightbox.querySelector('.lightbox-close');
+    const prevBtn = lightbox.querySelector('.lightbox-prev');
+    const nextBtn = lightbox.querySelector('.lightbox-next');
+    let currentIndex = 0;
+
+    function openLightbox(index) {
+      currentIndex = index;
+      const img = hostalPhotos[currentIndex];
+      lightboxImage.src = img.src;
+      lightboxImage.alt = img.alt;
+      lightbox.classList.add('active');
+    }
+
+    function closeLightbox() {
+      lightbox.classList.remove('active');
+      lightboxImage.src = '';
+    }
+
+    function changeImage(step) {
+      currentIndex = (currentIndex + step + hostalPhotos.length) % hostalPhotos.length;
+      openLightbox(currentIndex);
+    }
+
+    hostalPhotos.forEach((photo, index) => {
+      photo.addEventListener('click', () => openLightbox(index));
+    });
+
+    closeBtn.addEventListener('click', closeLightbox);
+    prevBtn.addEventListener('click', () => changeImage(-1));
+    nextBtn.addEventListener('click', () => changeImage(1));
+    lightbox.addEventListener('click', (event) => {
+      if (event.target === lightbox) closeLightbox();
+    });
+    document.addEventListener('keydown', (event) => {
+      if (!lightbox.classList.contains('active')) return;
+      if (event.key === 'Escape') closeLightbox();
+      if (event.key === 'ArrowLeft') changeImage(-1);
+      if (event.key === 'ArrowRight') changeImage(1);
+    });
+
+    const reservaForm = document.getElementById('reservaForm');
+    if (reservaForm) {
+      reservaForm.addEventListener('submit', function(event) {
+        event.preventDefault();
+        const data = new FormData(reservaForm);
+        const subject = 'Reserva Hostal CPH Bistró';
+        const body = Array.from(data.entries()).map(([key, value]) => `${key}: ${value}`).join('\n');
+        const mailto = `mailto:curaporelhabla@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+        const reservaSuccess = document.getElementById('reservaSuccess');
+        if (reservaSuccess) {
+          reservaSuccess.textContent = 'Mensaje enviado';
+          reservaSuccess.classList.add('visible');
+        }
+        window.location.href = mailto;
+      });
+    }
+
+    const contactForm = document.getElementById('contactForm');
+    if (contactForm) {
+      contactForm.addEventListener('submit', function(event) {
+        event.preventDefault();
+        const data = new FormData(contactForm);
+        const subject = 'Mensaje desde el sitio CPH Bistró';
+        const body = Array.from(data.entries()).map(([key, value]) => `${key}: ${value}`).join('\n');
+        const mailto = `mailto:curaporelhabla@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+        const contactSuccess = document.getElementById('contactSuccess');
+        if (contactSuccess) {
+          contactSuccess.textContent = 'Mensaje enviado';
+          contactSuccess.classList.add('visible');
+        }
+        window.location.href = mailto;
+      });
+    }
+
+    const navToggle = document.querySelector('.navbar__toggle');
+    const navMenu = document.querySelector('.navbar__menu');
+    if (navToggle && navMenu) {
+      navToggle.addEventListener('click', () => {
+        navMenu.classList.toggle('active');
+      });
+      navMenu.querySelectorAll('a').forEach((link) => {
+        link.addEventListener('click', () => {
+          navMenu.classList.remove('active');
+        });
+      });
+    }
+  </script>
+</body>
+</html>
